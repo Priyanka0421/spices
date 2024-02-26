@@ -1,0 +1,138 @@
+.checkbtn{
+    font-size: 25px;
+    padding: 4px 8px;
+    color: aliceblue;
+    display: none;
+    border: 2px solid #29f700;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#check{
+    display: none;
+}
+/* media queries */
+@media (max-width:576px){
+    /* navbar */
+    .logo{
+        margin: 0;
+        margin-left: 20px;
+    }
+    .navLinks {
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        display: none;
+        height: 30%;
+        width: 100%;
+    }
+
+    .navLinks li {
+        background-color: rgb(69, 73, 73);
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navLinks a:hover{
+        border-bottom: 2px solid #29f700;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+    .navBar button{
+        display: none;
+    }
+    /* home */
+    
+    .jumbotron{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* about */
+    .aboutContainer{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .aboutImage img{
+        width: 100%;
+
+    }
+    .content{
+        width: 100%;
+        padding-left: 50px;
+        padding-bottom: 25px;
+        /* margin-left: 10px; */
+    }
+    /* product */
+    .productSection{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .card{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 20px;
+        /* margin-left: 20px; */
+    }
+    .cardheaderimage img:hover{
+        transform:scale(0.9);
+        transition: (2s);
+    }
+    /* contact{ */
+        .contactContainer{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        .contactImage img{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            /* margin-left: 10px; */
+            margin-top: 20px;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+        }
+        .form1{
+            margin: 0;
+            padding: 0;
+            margin-right: 10px;
+            width: 100%;
+        }
+        .contactForm button{
+            width: 50%;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+        .copy{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+}
